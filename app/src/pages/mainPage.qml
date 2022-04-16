@@ -1,105 +1,112 @@
 import QtQuick 2.0
 import QtQuick.Controls 2.15
 import QtQuick.Dialogs 1.2
+import "../controls"
 
 Item {
     Rectangle {
         id: rectangle
-        color: "#2c313c"
+        color: "#ffffff"
         anchors.fill: parent
+        anchors.rightMargin: 0
+        anchors.bottomMargin: 0
+        anchors.leftMargin: 0
+        anchors.topMargin: 0
 
         Label {
             id: label1
-            x: 0
             y: 0
-            width: 800
             height: 24
-            color: "#ffffff"
+            color: "#004f90"
             text: "Система управления сварочной машиной"
+            anchors.left: parent.left
+            anchors.right: parent.right
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
+            anchors.rightMargin: 0
+            anchors.leftMargin: 0
             styleColor: "#ffffff"
             font.bold: false
         }
 
-        Button {
-            id: button
-            x: 21
-            y: 77
+        BlueBtn {
+            id: btnHome
+            x: 8
+            y: 64
             width: 230
             height: 50
-            text: qsTr("ВИЗУАЛИЗАЦИЯ")
-            checkable: false
-            autoExclusive: false
-            checked: false
-            focus: false
-            font.bold: true
-            font.pointSize: 14
+            font.pointSize: 12
+            font.styleName: "Regular"
+            font.family: "Proxima Nova"
+            text: qsTr("Визуализация")
+            font.capitalization: Font.AllUppercase
             onClicked: {
                 stackView.push(Qt.resolvedUrl("chartPage.qml"))
             }
         }
 
-        Button {
-            id: button1
-            x: 21
-            y: 148
+        BlueBtn {
+            id: btnHome1
+            x: 8
+            y: 138
             width: 230
             height: 50
-            text: qsTr("ПРОГРАММА")
-            font.bold: true
-            font.pointSize: 14
+            text: qsTr("Программа сварки")
+            font.capitalization: Font.AllUppercase
+            font.styleName: "Regular"
+            font.pointSize: 12
+            font.family: "Proxima Nova"
             onClicked: {
                 stackView.push(Qt.resolvedUrl("correctorParamPage.qml"))
             }
         }
 
-        Button {
-            id: button2
-            x: 21
-            y: 221
+        BlueBtn {
+            id: btnHome2
+            x: 8
+            y: 215
             width: 230
             height: 50
-            text: qsTr("УСТАНОВКИ")
-            font.bold: true
-            font.pointSize: 14
+            text: qsTr("Установки")
+            font.capitalization: Font.AllUppercase
+            font.styleName: "Regular"
+            font.pointSize: 12
+            font.family: "Proxima Nova"
             onClicked: {
-                stackView.push(Qt.resolvedUrl("chartPage.qml"))
+                stackView.push(Qt.resolvedUrl("settingsPage.qml"))
             }
         }
 
-        Button {
-            id: button3
-            x: 21
-            y: 407
+        BlueBtn {
+            id: btnHome3
+            x: 8
+            y: 347
             width: 230
             height: 50
-            text: qsTr("ЗАГРУЗКА ПРОГРАММЫ")
-            font.bold: true
-            font.pointSize: 14
-            onClicked: {
-                stackView.push(Qt.resolvedUrl("chartPage.qml"))
-            }
+            text: qsTr("Программа 1")
+            font.capitalization: Font.AllUppercase
+            font.styleName: "Regular"
+            font.pointSize: 12
+            font.family: "Proxima Nova"
         }
 
-        Button {
-            id: button4
-            x: 21
-            y: 338
+        BlueBtn {
+            id: btnHome4
+            x: 8
+            y: 422
             width: 230
             height: 50
-            text: "ПРОГРАММА 1"
-            font.bold: true
-            font.pointSize: 14
-            onClicked: {
-                stackView.push(Qt.resolvedUrl("chartPage.qml"))
-            }
+            text: qsTr("Загрузка программы")
+            font.capitalization: Font.AllUppercase
+            font.styleName: "Regular"
+            font.pointSize: 12
+            font.family: "Proxima Nova"
         }
     }
 }
 
 /*##^##
 Designer {
-    D{i:0;autoSize:true;height:480;width:800}D{i:2}D{i:4}D{i:5}D{i:6}D{i:7}
+    D{i:0;autoSize:true;height:480;width:800}D{i:4}D{i:5}D{i:6}D{i:7}
 }
 ##^##*/

@@ -1,11 +1,12 @@
 import QtQuick 2.0
 import QtQuick.Controls 2.15
 import QtQuick.VirtualKeyboard 2.1
+import "../controls"
 
 Item {
     Rectangle {
         id: rectangle
-        color: "#2c313c"
+        color: "#ffffff"
         anchors.fill: parent
         anchors.rightMargin: 0
         anchors.bottomMargin: 0
@@ -25,14 +26,15 @@ Item {
 
             Label {
                 id: label
-                x: 8
                 y: 0
                 width: 265
                 height: 33
                 color: "#ffffff"
                 text: "параметры корректора"
+                anchors.left: parent.left
                 horizontalAlignment: Text.AlignLeft
                 verticalAlignment: Text.AlignVCenter
+                anchors.leftMargin: 4
                 font.styleName: "Regular"
                 font.family: "Proxima Nova"
                 font.capitalization: Font.AllUppercase
@@ -50,7 +52,7 @@ Item {
                 anchors.right: parent.right
                 font.styleName: "Regular"
                 font.family: "Proxima Nova"
-                anchors.rightMargin: 8
+                anchors.rightMargin: 4
                 font.capitalization: Font.AllUppercase
                 focus: false
                 antialiasing: false
@@ -75,6 +77,197 @@ Item {
             anchors.leftMargin: 0
             anchors.bottomMargin: 0
             anchors.topMargin: 0
+
+            Label {
+                id: label1
+                y: 0
+                height: 21
+                color: "#ffffff"
+                text: qsTr("Номер участка")
+                anchors.left: parent.left
+                anchors.right: parent.right
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                anchors.rightMargin: 0
+                anchors.leftMargin: 0
+                font.pointSize: 12
+            }
+
+            Row {
+                id: row
+                y: 27
+                height: 31
+                anchors.left: parent.left
+                anchors.right: parent.right
+                anchors.rightMargin: 0
+                anchors.leftMargin: 0
+
+                Label {
+                    id: label2
+                    color: "#ffffff"
+                    text: qsTr("Label")
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                    font.pointSize: 14
+                }
+
+                Label {
+                    id: label3
+                    color: "#ffffff"
+                    text: qsTr("Label")
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                    font.pointSize: 14
+                }
+
+                Label {
+                    id: label4
+                    color: "#ffffff"
+                    text: qsTr("Label")
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                    font.pointSize: 14
+                }
+
+                Label {
+                    id: label5
+                    color: "#ffffff"
+                    text: qsTr("Label")
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                    font.pointSize: 14
+                }
+
+                Label {
+                    id: label6
+                    color: "#ffffff"
+                    text: qsTr("Label")
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                    font.pointSize: 14
+                }
+
+                Label {
+                    id: label7
+                    color: "#ffffff"
+                    text: qsTr("Label")
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                    font.pointSize: 14
+                }
+
+                Label {
+                    id: label8
+                    color: "#ffffff"
+                    text: qsTr("Label")
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                    font.pointSize: 14
+                }
+
+                Label {
+                    id: label9
+                    color: "#ffffff"
+                    text: qsTr("Label")
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                    font.pointSize: 14
+                }
+
+                Label {
+                    id: label10
+                    color: "#ffffff"
+                    text: qsTr("Label")
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                    font.pointSize: 14
+                }
+            }
+
+            Label {
+                id: label11
+                y: 51
+                height: 27
+                color: "#ffffff"
+                text: qsTr("Ток коррекции")
+                anchors.left: parent.left
+                anchors.right: parent.right
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                anchors.rightMargin: 0
+                anchors.leftMargin: 0
+                font.pointSize: 12
+            }
+
+            Row {
+                id: row1
+                x: 8
+                y: 84
+                width: 784
+                height: 26
+                spacing: 4
+
+                TextField {
+                    id: textField
+                    width: 75
+                    placeholderText: qsTr("Text Field")
+                }
+
+                TextField {
+                    id: textField1
+                    width: 75
+                    placeholderText: qsTr("Text Field")
+                }
+
+                TextField {
+                    id: textField2
+                    width: 75
+                    placeholderText: qsTr("Text Field")
+                }
+
+                TextField {
+                    id: textField3
+                    width: 75
+                    placeholderText: qsTr("Text Field")
+                }
+
+                TextField {
+                    id: textField4
+                    width: 75
+                    placeholderText: qsTr("Text Field")
+                }
+
+                TextField {
+                    id: textField5
+                    width: 75
+                    placeholderText: qsTr("Text Field")
+                }
+
+                TextField {
+                    id: textField6
+                    width: 75
+                    placeholderText: qsTr("Text Field")
+                }
+
+                TextField {
+                    id: textField7
+                    width: 75
+                    placeholderText: qsTr("Text Field")
+                }
+
+                TextField {
+                    id: textField8
+                    width: 75
+                    placeholderText: qsTr("Text Field")
+                }
+
+                TextField {
+                    id: textField9
+                    width: 75
+                    placeholderText: qsTr("Text Field")
+                }
+            }
+            
         }
 
         Rectangle {
@@ -96,6 +289,8 @@ Item {
                 width: 132
                 height: 36
                 text: qsTr("выход")
+                anchors.right: parent.right
+                anchors.rightMargin: 4
                 font.capitalization: Font.Capitalize
                 font.pointSize: 14
                 onClicked: {
@@ -103,6 +298,7 @@ Item {
                 }
             }
         }
+
 
     }
 
@@ -124,6 +320,6 @@ Item {
 
 /*##^##
 Designer {
-    D{i:0;autoSize:true;formeditorZoom:0.9;height:480;width:800}D{i:2}D{i:5}D{i:6}
+    D{i:0;autoSize:true;formeditorZoom:0.9;height:480;width:800}
 }
 ##^##*/

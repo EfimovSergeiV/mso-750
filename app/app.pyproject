@@ -1,3 +1,3 @@
 {
-    "files": ["src/main.qml","src/pages/mainPage.qml","main.py","src/pages/chartPage.qml","src/pages/correctorParamPage.qml"]
+    "files": ["src/pages/mainPage.qml","main.py","src/main.qml","src/controls/BlueBtn.qml","src/pages/chartPage.qml","src/pages/correctorParamPage.qml"]
 }
