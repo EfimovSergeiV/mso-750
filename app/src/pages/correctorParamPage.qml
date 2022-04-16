@@ -15,7 +15,7 @@ Item {
 
         Rectangle {
             id: rectangle1
-            height: 43
+            height: 22
             color: "#00ffffff"
             anchors.left: parent.left
             anchors.right: parent.right
@@ -27,9 +27,9 @@ Item {
             Label {
                 id: label
                 y: 0
-                width: 265
-                height: 33
-                color: "#ffffff"
+                width: 260
+                height: 22
+                color: "#000000"
                 text: "параметры корректора"
                 anchors.left: parent.left
                 horizontalAlignment: Text.AlignLeft
@@ -38,31 +38,8 @@ Item {
                 font.styleName: "Regular"
                 font.family: "Proxima Nova"
                 font.capitalization: Font.AllUppercase
-                font.pointSize: 14
+                font.pointSize: 12
                 font.bold: true
-            }
-
-            Button {
-                id: button
-                x: 609
-                y: 8
-                width: 183
-                height: 33
-                text: qsTr("клавиатура")
-                anchors.right: parent.right
-                font.styleName: "Regular"
-                font.family: "Proxima Nova"
-                anchors.rightMargin: 4
-                font.capitalization: Font.AllUppercase
-                focus: false
-                antialiasing: false
-                font.pointSize: 14
-                font.weight: Font.Normal
-                font.bold: true
-                autoExclusive: false
-                onClicked: {
-                    keyboardPanel.visible = !keyboardPanel.visible
-                }
             }
         }
 
@@ -82,7 +59,7 @@ Item {
                 id: label1
                 y: 0
                 height: 21
-                color: "#ffffff"
+                color: "#000000"
                 text: qsTr("Номер участка")
                 anchors.left: parent.left
                 anchors.right: parent.right
@@ -99,96 +76,16 @@ Item {
                 height: 31
                 anchors.left: parent.left
                 anchors.right: parent.right
+                spacing: 38
                 anchors.rightMargin: 0
                 anchors.leftMargin: 0
-
-                Label {
-                    id: label2
-                    color: "#ffffff"
-                    text: qsTr("Label")
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                    font.pointSize: 14
-                }
-
-                Label {
-                    id: label3
-                    color: "#ffffff"
-                    text: qsTr("Label")
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                    font.pointSize: 14
-                }
-
-                Label {
-                    id: label4
-                    color: "#ffffff"
-                    text: qsTr("Label")
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                    font.pointSize: 14
-                }
-
-                Label {
-                    id: label5
-                    color: "#ffffff"
-                    text: qsTr("Label")
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                    font.pointSize: 14
-                }
-
-                Label {
-                    id: label6
-                    color: "#ffffff"
-                    text: qsTr("Label")
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                    font.pointSize: 14
-                }
-
-                Label {
-                    id: label7
-                    color: "#ffffff"
-                    text: qsTr("Label")
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                    font.pointSize: 14
-                }
-
-                Label {
-                    id: label8
-                    color: "#ffffff"
-                    text: qsTr("Label")
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                    font.pointSize: 14
-                }
-
-                Label {
-                    id: label9
-                    color: "#ffffff"
-                    text: qsTr("Label")
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                    font.pointSize: 14
-                }
-
-                Label {
-                    id: label10
-                    color: "#ffffff"
-                    text: qsTr("Label")
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                    font.pointSize: 14
-                }
             }
 
             Label {
                 id: label11
                 y: 51
                 height: 27
-                color: "#ffffff"
+                color: "#000000"
                 text: qsTr("Ток коррекции")
                 anchors.left: parent.left
                 anchors.right: parent.right
@@ -197,75 +94,6 @@ Item {
                 anchors.rightMargin: 0
                 anchors.leftMargin: 0
                 font.pointSize: 12
-            }
-
-            Row {
-                id: row1
-                x: 8
-                y: 84
-                width: 784
-                height: 26
-                spacing: 4
-
-                TextField {
-                    id: textField
-                    width: 75
-                    placeholderText: qsTr("Text Field")
-                }
-
-                TextField {
-                    id: textField1
-                    width: 75
-                    placeholderText: qsTr("Text Field")
-                }
-
-                TextField {
-                    id: textField2
-                    width: 75
-                    placeholderText: qsTr("Text Field")
-                }
-
-                TextField {
-                    id: textField3
-                    width: 75
-                    placeholderText: qsTr("Text Field")
-                }
-
-                TextField {
-                    id: textField4
-                    width: 75
-                    placeholderText: qsTr("Text Field")
-                }
-
-                TextField {
-                    id: textField5
-                    width: 75
-                    placeholderText: qsTr("Text Field")
-                }
-
-                TextField {
-                    id: textField6
-                    width: 75
-                    placeholderText: qsTr("Text Field")
-                }
-
-                TextField {
-                    id: textField7
-                    width: 75
-                    placeholderText: qsTr("Text Field")
-                }
-
-                TextField {
-                    id: textField8
-                    width: 75
-                    placeholderText: qsTr("Text Field")
-                }
-
-                TextField {
-                    id: textField9
-                    width: 75
-                    placeholderText: qsTr("Text Field")
-                }
             }
             
         }
@@ -282,17 +110,17 @@ Item {
             anchors.leftMargin: 0
             anchors.bottomMargin: 0
 
-            Button {
-                id: button1
-                x: 660
+            BlueBtn {
+                id: blueBtn
+                x: 632
                 y: 4
-                width: 132
+                width: 164
                 height: 36
-                text: qsTr("выход")
+                text: "Выход"
                 anchors.right: parent.right
+                font.bold: true
+                font.family: "Proxima Nova"
                 anchors.rightMargin: 4
-                font.capitalization: Font.Capitalize
-                font.pointSize: 14
                 onClicked: {
                     stackView.push(Qt.resolvedUrl("mainPage.qml"))
                 }
