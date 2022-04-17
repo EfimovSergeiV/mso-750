@@ -4,10 +4,14 @@ import QtQuick.Dialogs 1.2
 import "../controls"
 
 Item {
+    id: item1
     Rectangle {
         id: rectangle
         color: "#aebfcd"
-        anchors.fill: parent
+        anchors.left: parent.left
+        anchors.right: parent.right
+        anchors.top: parent.top
+        anchors.bottom: parent.bottom
         anchors.rightMargin: 0
         anchors.bottomMargin: 0
         anchors.leftMargin: 0
@@ -50,7 +54,7 @@ Item {
         BlueBtn {
             id: btnHome
             x: 0
-            y: 115
+            y: 72
             width: 230
             height: 50
             font.pointSize: 12
@@ -58,8 +62,8 @@ Item {
             font.family: "Proxima Nova"
             text: qsTr("Визуализация")
             anchors.left: parent.left
-            anchors.right: btnHome1.right
-            anchors.rightMargin: 0
+            anchors.bottom: btnHome1.top
+            anchors.bottomMargin: 21
             anchors.leftMargin: 0
             font.capitalization: Font.AllUppercase
             onClicked: {
@@ -70,11 +74,13 @@ Item {
         BlueBtn {
             id: btnHome1
             x: 0
-            y: 187
+            y: 143
             width: 230
             height: 50
             text: qsTr("Программа сварки")
             anchors.left: parent.left
+            anchors.bottom: btnHome2.top
+            anchors.bottomMargin: 22
             anchors.leftMargin: 0
             font.capitalization: Font.AllUppercase
             font.styleName: "Regular"
@@ -87,16 +93,15 @@ Item {
 
         BlueBtn {
             id: btnHome2
-            x: 8
-            y: 256
+            y: 215
             width: 230
             height: 50
             text: qsTr("Установки")
             anchors.left: parent.left
-            anchors.right: btnHome1.right
-            anchors.rightMargin: 0
-            anchors.horizontalCenter: btnHome4.horizontalCenter
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: 215
             anchors.leftMargin: 0
+            anchors.horizontalCenter: btnHome4.horizontalCenter
             font.capitalization: Font.AllUppercase
             font.styleName: "Regular"
             font.pointSize: 12
@@ -109,15 +114,15 @@ Item {
         BlueBtn {
             id: btnHome3
             x: 8
-            y: 359
+            y: 334
             width: 230
             height: 50
             text: qsTr("Программа 1")
-            anchors.left: parent.left
-            anchors.right: btnHome.right
-            anchors.rightMargin: 0
+            anchors.left: btnHome4.right
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: 96
             anchors.horizontalCenter: btnHome4.horizontalCenter
-            anchors.leftMargin: 0
+            anchors.leftMargin: -230
             font.capitalization: Font.AllUppercase
             font.styleName: "Regular"
             font.pointSize: 12
@@ -127,17 +132,89 @@ Item {
         BlueBtn {
             id: btnHome4
             x: 0
-            y: 430
+            y: 409
             width: 230
             height: 50
             text: qsTr("Загрузка программы")
             anchors.left: parent.left
             anchors.bottom: parent.bottom
             anchors.leftMargin: 0
-            anchors.bottomMargin: 0
+            anchors.bottomMargin: 21
             font.capitalization: Font.AllUppercase
             font.styleName: "Regular"
             font.pointSize: 12
+            font.family: "Proxima Nova"
+        }
+
+
+        BlueBtn {
+            id: btnHome5
+            x: 318
+            y: 143
+            width: 230
+            height: 50
+            text: qsTr("Загрузка программы")
+            anchors.right: btnHome6.left
+            anchors.bottom: btnHome7.top
+            anchors.bottomMargin: 22
+            anchors.rightMargin: 22
+            font.capitalization: Font.AllUppercase
+            font.pointSize: 12
+            font.styleName: "Regular"
+            font.family: "Proxima Nova"
+        }
+
+        BlueBtn {
+            id: btnHome6
+            x: 570
+            y: 143
+            width: 230
+            height: 50
+            text: qsTr("Загрузка программы")
+            anchors.verticalCenter: btnHome5.verticalCenter
+            anchors.right: parent.right
+            anchors.bottom: btnHome8.top
+            anchors.rightMargin: 0
+            anchors.bottomMargin: 22
+            font.capitalization: Font.AllUppercase
+            font.pointSize: 12
+            font.styleName: "Regular"
+            font.family: "Proxima Nova"
+        }
+
+        BlueBtn {
+            id: btnHome7
+            x: 318
+            y: 215
+            width: 230
+            height: 50
+            text: qsTr("Загрузка программы")
+            anchors.right: btnHome8.left
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: 215
+            anchors.rightMargin: 22
+            anchors.horizontalCenter: btnHome5.horizontalCenter
+            font.capitalization: Font.AllUppercase
+            font.pointSize: 12
+            font.styleName: "Regular"
+            font.family: "Proxima Nova"
+        }
+
+        BlueBtn {
+            id: btnHome8
+            x: 570
+            y: 215
+            width: 230
+            height: 50
+            text: qsTr("Загрузка программы")
+            anchors.right: parent.right
+            anchors.bottom: parent.bottom
+            anchors.rightMargin: 0
+            anchors.bottomMargin: 215
+            anchors.horizontalCenter: btnHome6.horizontalCenter
+            font.capitalization: Font.AllUppercase
+            font.pointSize: 12
+            font.styleName: "Regular"
             font.family: "Proxima Nova"
         }
 
@@ -148,20 +225,17 @@ Item {
             width: 360
             height: 121
             anchors.right: parent.right
-            anchors.top: btnHome3.top
             anchors.bottom: parent.bottom
             source: "../content/logotype.png"
+            anchors.bottomMargin: 0
             anchors.rightMargin: 8
-            anchors.bottomMargin: 8
-            anchors.topMargin: 8
             fillMode: Image.PreserveAspectFit
         }
-
     }
 }
 
 /*##^##
 Designer {
-    D{i:0;autoSize:true;height:480;width:800}D{i:3}
+    D{i:0;autoSize:true;height:480;width:800}D{i:3}D{i:6}D{i:9}D{i:10}D{i:11}D{i:12}
 }
 ##^##*/
