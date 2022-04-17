@@ -194,7 +194,7 @@ Item {
 
             Label {
                 id: label12
-                height: 12
+                height: 14
                 text: qsTr("Ток коррекции (А)")
                 anchors.left: parent.left
                 anchors.right: parent.right
@@ -225,7 +225,7 @@ Item {
                     height: 28
                     horizontalAlignment: Text.AlignHCenter
                     font.family: "Proxima Nova"
-                    placeholderText: qsTr("Text Field")
+                    placeholderText: qsTr("0")
                 }
 
                 TextField {
@@ -234,7 +234,7 @@ Item {
                     height: 28
                     horizontalAlignment: Text.AlignHCenter
                     font.family: "Proxima Nova"
-                    placeholderText: qsTr("Text Field")
+                    placeholderText: qsTr("0")
                 }
 
                 TextField {
@@ -243,7 +243,7 @@ Item {
                     height: 28
                     horizontalAlignment: Text.AlignHCenter
                     font.family: "Proxima Nova"
-                    placeholderText: qsTr("Text Field")
+                    placeholderText: qsTr("0")
                 }
 
                 TextField {
@@ -252,7 +252,7 @@ Item {
                     height: 28
                     horizontalAlignment: Text.AlignHCenter
                     font.family: "Proxima Nova"
-                    placeholderText: qsTr("Text Field")
+                    placeholderText: qsTr("0")
                 }
 
                 TextField {
@@ -261,7 +261,7 @@ Item {
                     height: 28
                     horizontalAlignment: Text.AlignHCenter
                     font.family: "Proxima Nova"
-                    placeholderText: qsTr("Text Field")
+                    placeholderText: qsTr("0")
                 }
 
                 TextField {
@@ -270,7 +270,7 @@ Item {
                     height: 28
                     horizontalAlignment: Text.AlignHCenter
                     font.family: "Proxima Nova"
-                    placeholderText: qsTr("Text Field")
+                    placeholderText: qsTr("0")
                 }
 
                 TextField {
@@ -279,7 +279,7 @@ Item {
                     height: 28
                     horizontalAlignment: Text.AlignHCenter
                     font.family: "Proxima Nova"
-                    placeholderText: qsTr("Text Field")
+                    placeholderText: qsTr("0")
                 }
 
                 TextField {
@@ -288,7 +288,7 @@ Item {
                     height: 28
                     horizontalAlignment: Text.AlignHCenter
                     font.family: "Proxima Nova"
-                    placeholderText: qsTr("Text Field")
+                    placeholderText: qsTr("0")
                 }
 
                 TextField {
@@ -297,7 +297,7 @@ Item {
                     height: 28
                     horizontalAlignment: Text.AlignHCenter
                     font.family: "Proxima Nova"
-                    placeholderText: qsTr("Text Field")
+                    placeholderText: qsTr("0")
                 }
 
                 TextField {
@@ -306,13 +306,13 @@ Item {
                     height: 28
                     horizontalAlignment: Text.AlignHCenter
                     font.family: "Proxima Nova"
-                    placeholderText: qsTr("Text Field")
+                    placeholderText: qsTr("0")
                 }
             }
 
             Label {
                 id: label13
-                height: 15
+                height: 14
                 text: qsTr("Ток останова (А)")
                 anchors.left: parent.left
                 anchors.right: parent.right
@@ -340,7 +340,7 @@ Item {
                     width: 75
                     height: 28
                     horizontalAlignment: Text.AlignHCenter
-                    placeholderText: qsTr("Text Field")
+                    placeholderText: qsTr("0")
                     font.family: "Proxima Nova"
                 }
 
@@ -349,7 +349,7 @@ Item {
                     width: 75
                     height: 28
                     horizontalAlignment: Text.AlignHCenter
-                    placeholderText: qsTr("Text Field")
+                    placeholderText: qsTr("0")
                     font.family: "Proxima Nova"
                 }
 
@@ -358,7 +358,7 @@ Item {
                     width: 75
                     height: 28
                     horizontalAlignment: Text.AlignHCenter
-                    placeholderText: qsTr("Text Field")
+                    placeholderText: qsTr("0")
                     font.family: "Proxima Nova"
                 }
 
@@ -367,7 +367,7 @@ Item {
                     width: 75
                     height: 28
                     horizontalAlignment: Text.AlignHCenter
-                    placeholderText: qsTr("Text Field")
+                    placeholderText: qsTr("0")
                     font.family: "Proxima Nova"
                 }
 
@@ -376,7 +376,7 @@ Item {
                     width: 75
                     height: 28
                     horizontalAlignment: Text.AlignHCenter
-                    placeholderText: qsTr("Text Field")
+                    placeholderText: qsTr("0")
                     font.family: "Proxima Nova"
                 }
 
@@ -385,7 +385,7 @@ Item {
                     width: 75
                     height: 28
                     horizontalAlignment: Text.AlignHCenter
-                    placeholderText: qsTr("Text Field")
+                    placeholderText: qsTr("0")
                     font.family: "Proxima Nova"
                 }
 
@@ -394,7 +394,7 @@ Item {
                     width: 75
                     height: 28
                     horizontalAlignment: Text.AlignHCenter
-                    placeholderText: qsTr("Text Field")
+                    placeholderText: qsTr("0")
                     font.family: "Proxima Nova"
                 }
 
@@ -403,7 +403,7 @@ Item {
                     width: 75
                     height: 28
                     horizontalAlignment: Text.AlignHCenter
-                    placeholderText: qsTr("Text Field")
+                    placeholderText: qsTr("0")
                     font.family: "Proxima Nova"
                 }
 
@@ -412,7 +412,7 @@ Item {
                     width: 75
                     height: 28
                     horizontalAlignment: Text.AlignHCenter
-                    placeholderText: qsTr("Text Field")
+                    placeholderText: qsTr("0")
                     font.family: "Proxima Nova"
                 }
 
@@ -421,7 +421,243 @@ Item {
                     width: 75
                     height: 28
                     horizontalAlignment: Text.AlignHCenter
-                    placeholderText: qsTr("Text Field")
+                    placeholderText: qsTr("0")
+                    font.family: "Proxima Nova"
+                }
+                anchors.topMargin: 0
+                anchors.leftMargin: 8
+            }
+
+            Label {
+                id: label14
+                height: 14
+                text: qsTr("Ток реверса (А)")
+                anchors.left: parent.left
+                anchors.right: parent.right
+                anchors.top: row2.bottom
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                font.styleName: "Regular"
+                font.family: "Proxima Nova"
+                font.pointSize: 8
+                anchors.rightMargin: 8
+                anchors.leftMargin: 8
+                anchors.topMargin: 0
+            }
+
+            Row {
+                id: row3
+                height: 30
+                anchors.left: parent.left
+                anchors.right: parent.right
+                anchors.top: label14.bottom
+                anchors.rightMargin: 8
+                spacing: 4
+                TextField {
+                    id: textField20
+                    width: 75
+                    height: 28
+                    horizontalAlignment: Text.AlignHCenter
+                    placeholderText: qsTr("0")
+                    font.family: "Proxima Nova"
+                }
+
+                TextField {
+                    id: textField21
+                    width: 75
+                    height: 28
+                    horizontalAlignment: Text.AlignHCenter
+                    placeholderText: qsTr("0")
+                    font.family: "Proxima Nova"
+                }
+
+                TextField {
+                    id: textField22
+                    width: 75
+                    height: 28
+                    horizontalAlignment: Text.AlignHCenter
+                    placeholderText: qsTr("0")
+                    font.family: "Proxima Nova"
+                }
+
+                TextField {
+                    id: textField23
+                    width: 75
+                    height: 28
+                    horizontalAlignment: Text.AlignHCenter
+                    placeholderText: qsTr("0")
+                    font.family: "Proxima Nova"
+                }
+
+                TextField {
+                    id: textField24
+                    width: 75
+                    height: 28
+                    horizontalAlignment: Text.AlignHCenter
+                    placeholderText: qsTr("0")
+                    font.family: "Proxima Nova"
+                }
+
+                TextField {
+                    id: textField25
+                    width: 75
+                    height: 28
+                    horizontalAlignment: Text.AlignHCenter
+                    placeholderText: qsTr("0")
+                    font.family: "Proxima Nova"
+                }
+
+                TextField {
+                    id: textField26
+                    width: 75
+                    height: 28
+                    horizontalAlignment: Text.AlignHCenter
+                    placeholderText: qsTr("0")
+                    font.family: "Proxima Nova"
+                }
+
+                TextField {
+                    id: textField27
+                    width: 75
+                    height: 28
+                    horizontalAlignment: Text.AlignHCenter
+                    placeholderText: qsTr("0")
+                    font.family: "Proxima Nova"
+                }
+
+                TextField {
+                    id: textField28
+                    width: 75
+                    height: 28
+                    horizontalAlignment: Text.AlignHCenter
+                    placeholderText: qsTr("0")
+                    font.family: "Proxima Nova"
+                }
+
+                TextField {
+                    id: textField29
+                    width: 75
+                    height: 28
+                    horizontalAlignment: Text.AlignHCenter
+                    placeholderText: qsTr("0")
+                    font.family: "Proxima Nova"
+                }
+                anchors.topMargin: 0
+                anchors.leftMargin: 8
+            }
+
+            Label {
+                id: label15
+                height: 14
+                text: qsTr("Ток К.З. (А)")
+                anchors.left: parent.left
+                anchors.right: parent.right
+                anchors.top: row3.bottom
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                font.styleName: "Regular"
+                font.family: "Proxima Nova"
+                font.pointSize: 8
+                anchors.topMargin: 0
+                anchors.rightMargin: 8
+                anchors.leftMargin: 8
+            }
+
+            Row {
+                id: row4
+                height: 30
+                anchors.left: parent.left
+                anchors.right: parent.right
+                anchors.top: label15.bottom
+                anchors.rightMargin: 8
+                spacing: 4
+                TextField {
+                    id: textField30
+                    width: 75
+                    height: 28
+                    horizontalAlignment: Text.AlignHCenter
+                    placeholderText: qsTr("0")
+                    font.family: "Proxima Nova"
+                }
+
+                TextField {
+                    id: textField31
+                    width: 75
+                    height: 28
+                    horizontalAlignment: Text.AlignHCenter
+                    placeholderText: qsTr("0")
+                    font.family: "Proxima Nova"
+                }
+
+                TextField {
+                    id: textField32
+                    width: 75
+                    height: 28
+                    horizontalAlignment: Text.AlignHCenter
+                    placeholderText: qsTr("0")
+                    font.family: "Proxima Nova"
+                }
+
+                TextField {
+                    id: textField33
+                    width: 75
+                    height: 28
+                    horizontalAlignment: Text.AlignHCenter
+                    placeholderText: qsTr("0")
+                    font.family: "Proxima Nova"
+                }
+
+                TextField {
+                    id: textField34
+                    width: 75
+                    height: 28
+                    horizontalAlignment: Text.AlignHCenter
+                    placeholderText: qsTr("0")
+                    font.family: "Proxima Nova"
+                }
+
+                TextField {
+                    id: textField35
+                    width: 75
+                    height: 28
+                    horizontalAlignment: Text.AlignHCenter
+                    placeholderText: qsTr("0")
+                    font.family: "Proxima Nova"
+                }
+
+                TextField {
+                    id: textField36
+                    width: 75
+                    height: 28
+                    horizontalAlignment: Text.AlignHCenter
+                    placeholderText: qsTr("0")
+                    font.family: "Proxima Nova"
+                }
+
+                TextField {
+                    id: textField37
+                    width: 75
+                    height: 28
+                    horizontalAlignment: Text.AlignHCenter
+                    placeholderText: qsTr("0")
+                    font.family: "Proxima Nova"
+                }
+
+                TextField {
+                    id: textField38
+                    width: 75
+                    height: 28
+                    horizontalAlignment: Text.AlignHCenter
+                    placeholderText: qsTr("0")
+                    font.family: "Proxima Nova"
+                }
+
+                TextField {
+                    id: textField39
+                    width: 75
+                    height: 28
+                    horizontalAlignment: Text.AlignHCenter
+                    placeholderText: qsTr("0")
                     font.family: "Proxima Nova"
                 }
                 anchors.topMargin: 0
@@ -481,6 +717,6 @@ Item {
 /*##^##
 Designer {
     D{i:0;autoSize:true;formeditorZoom:0.9;height:480;width:800}D{i:3}D{i:4}D{i:6}D{i:18}
-D{i:30}
+D{i:30}D{i:42}D{i:54}
 }
 ##^##*/
