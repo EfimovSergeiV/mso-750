@@ -29,6 +29,24 @@ Item {
             font.bold: false
         }
 
+        Label {
+            id: label
+            height: 17
+            color: "#004f90"
+            text: qsTr("МСО-750")
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.top: label1.bottom
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
+            anchors.topMargin: 6
+            anchors.rightMargin: 0
+            anchors.leftMargin: 0
+            font.bold: true
+            font.pointSize: 14
+            font.family: "Proxima Nova"
+        }
+
         BlueBtn {
             id: btnHome
             x: 8
@@ -102,11 +120,12 @@ Item {
             font.pointSize: 12
             font.family: "Proxima Nova"
         }
+
     }
 }
 
 /*##^##
 Designer {
-    D{i:0;autoSize:true;height:480;width:800}D{i:4}D{i:5}D{i:6}D{i:7}
+    D{i:0;autoSize:true;height:480;width:800}D{i:3}
 }
 ##^##*/
