@@ -153,7 +153,7 @@ Item {
             y: 143
             width: 230
             height: 50
-            text: qsTr("Загрузка программы")
+            text: qsTr("Пример 1")
             anchors.right: btnHome6.left
             anchors.bottom: btnHome7.top
             anchors.bottomMargin: 22
@@ -162,6 +162,9 @@ Item {
             font.pointSize: 12
             font.styleName: "Regular"
             font.family: "Proxima Nova"
+            onClicked: {
+                stackView.push(Qt.resolvedUrl("dialControlPage.qml"))
+            }
         }
 
         BlueBtn {
@@ -170,7 +173,7 @@ Item {
             y: 143
             width: 230
             height: 50
-            text: qsTr("Загрузка программы")
+            text: qsTr("Пример 2")
             anchors.verticalCenter: btnHome5.verticalCenter
             anchors.right: parent.right
             anchors.bottom: btnHome8.top
@@ -188,7 +191,7 @@ Item {
             y: 215
             width: 230
             height: 50
-            text: qsTr("Загрузка программы")
+            text: qsTr("Пример 3")
             anchors.right: btnHome8.left
             anchors.bottom: parent.bottom
             anchors.bottomMargin: 215
@@ -206,7 +209,7 @@ Item {
             y: 215
             width: 230
             height: 50
-            text: qsTr("Загрузка программы")
+            text: qsTr("Пример 4")
             anchors.right: parent.right
             anchors.bottom: parent.bottom
             anchors.rightMargin: 0

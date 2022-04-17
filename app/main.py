@@ -5,6 +5,7 @@ from pathlib import Path
 from PySide2.QtWidgets import QApplication
 from PySide2.QtQml import QQmlApplicationEngine
 
+from libs.example import *
 os.environ["QT_IM_MODULE"] = "qtvirtualkeyboard"
 
 
@@ -12,4 +13,8 @@ if __name__ == "__main__":
     app = QApplication([])
     engine = QQmlApplicationEngine()
     engine.load(os.fspath(Path(__file__).resolve().parent / "src/main.qml"))
+
+    example = Example()
+    engine.rootContext().setContextProperty("example", example)
+
     sys.exit(app.exec_())
