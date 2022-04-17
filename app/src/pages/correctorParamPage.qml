@@ -16,7 +16,7 @@ Item {
         Rectangle {
             id: rectangle1
             height: 28
-            color: "#00ffffff"
+            color: "#143656"
             anchors.left: parent.left
             anchors.right: parent.right
             anchors.top: parent.top
@@ -26,6 +26,7 @@ Item {
 
             Label {
                 id: label
+                color: "#ffffff"
                 text: qsTr("Параметры корректора")
                 anchors.left: parent.left
                 anchors.right: label1.left
@@ -44,12 +45,14 @@ Item {
                 id: label1
                 x: 400
                 width: 400
-                text: qsTr("Номер участка")
+                color: "#ffffff"
+                text: qsTr("номер участка")
                 anchors.right: parent.right
                 anchors.top: parent.top
                 anchors.bottom: parent.bottom
-                horizontalAlignment: Text.AlignRight
+                horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignBottom
+                font.pointSize: 8
                 font.styleName: "Regular"
                 font.family: "Proxima Nova"
                 anchors.rightMargin: 4
@@ -60,7 +63,7 @@ Item {
 
         Rectangle {
             id: rectangle2
-            color: "#939393"
+            color: "#aebfcd"
             anchors.left: parent.left
             anchors.right: parent.right
             anchors.top: rectangle1.bottom
@@ -670,7 +673,7 @@ Item {
             id: rectangle3
             y: 264
             height: 216
-            color: "#00ffffff"
+            color: "#aebfcd"
             anchors.left: parent.left
             anchors.right: parent.right
             anchors.bottom: parent.bottom
