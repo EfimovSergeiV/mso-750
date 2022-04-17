@@ -60,14 +60,14 @@ Item {
 
         Rectangle {
             id: rectangle2
-            color: "#00ffffff"
+            color: "#939393"
             anchors.left: parent.left
             anchors.right: parent.right
             anchors.top: rectangle1.bottom
             anchors.bottom: rectangle3.top
             anchors.rightMargin: 0
             anchors.leftMargin: 0
-            anchors.bottomMargin: 0
+            anchors.bottomMargin: 180
             anchors.topMargin: 0
 
             Row {
