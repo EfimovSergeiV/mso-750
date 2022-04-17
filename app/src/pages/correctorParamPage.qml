@@ -15,7 +15,7 @@ Item {
 
         Rectangle {
             id: rectangle1
-            height: 16
+            height: 28
             color: "#00ffffff"
             anchors.left: parent.left
             anchors.right: parent.right
@@ -49,7 +49,7 @@ Item {
                 anchors.top: parent.top
                 anchors.bottom: parent.bottom
                 horizontalAlignment: Text.AlignRight
-                verticalAlignment: Text.AlignVCenter
+                verticalAlignment: Text.AlignBottom
                 font.styleName: "Regular"
                 font.family: "Proxima Nova"
                 anchors.rightMargin: 4
@@ -67,12 +67,12 @@ Item {
             anchors.bottom: rectangle3.top
             anchors.rightMargin: 0
             anchors.leftMargin: 0
-            anchors.bottomMargin: 180
+            anchors.bottomMargin: 0
             anchors.topMargin: 0
 
             Row {
                 id: row
-                height: 13
+                height: 21
                 anchors.left: parent.left
                 anchors.right: parent.right
                 anchors.top: parent.top
@@ -194,7 +194,7 @@ Item {
 
             Label {
                 id: label12
-                height: 14
+                height: 20
                 text: qsTr("Ток коррекции (А)")
                 anchors.left: parent.left
                 anchors.right: parent.right
@@ -312,7 +312,7 @@ Item {
 
             Label {
                 id: label13
-                height: 14
+                height: 20
                 text: qsTr("Ток останова (А)")
                 anchors.left: parent.left
                 anchors.right: parent.right
@@ -430,7 +430,7 @@ Item {
 
             Label {
                 id: label14
-                height: 14
+                height: 20
                 text: qsTr("Ток реверса (А)")
                 anchors.left: parent.left
                 anchors.right: parent.right
@@ -548,7 +548,7 @@ Item {
 
             Label {
                 id: label15
-                height: 14
+                height: 20
                 text: qsTr("Ток К.З. (А)")
                 anchors.left: parent.left
                 anchors.right: parent.right
@@ -668,8 +668,8 @@ Item {
 
         Rectangle {
             id: rectangle3
-            y: 436
-            height: 44
+            y: 264
+            height: 216
             color: "#00ffffff"
             anchors.left: parent.left
             anchors.right: parent.right
@@ -717,6 +717,6 @@ Item {
 /*##^##
 Designer {
     D{i:0;autoSize:true;formeditorZoom:0.9;height:480;width:800}D{i:3}D{i:4}D{i:6}D{i:18}
-D{i:30}D{i:42}D{i:54}
+D{i:30}D{i:42}D{i:54}D{i:65}
 }
 ##^##*/
