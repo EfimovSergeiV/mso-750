@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 7.0.1, 2022-04-28T14:19:39. -->
+<!-- Written by QtCreator 7.0.0, 2022-04-16T21:13:10. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
-  <value type="QByteArray">{d6e4f40c-0d8d-476d-ab5f-a5aa9a68c04d}</value>
+  <value type="QByteArray">{f931818a-2593-4b24-9e35-5a4c946209cb}</value>
  </data>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -77,7 +77,7 @@
     <value type="bool" key="ClangTools.AnalyzeOpenFiles">true</value>
     <value type="bool" key="ClangTools.BuildBeforeAnalysis">true</value>
     <value type="QString" key="ClangTools.DiagnosticConfig">Builtin.DefaultTidyAndClazy</value>
-    <value type="int" key="ClangTools.ParallelJobs">4</value>
+    <value type="int" key="ClangTools.ParallelJobs">2</value>
     <valuelist type="QVariantList" key="ClangTools.SelectedDirs"/>
     <valuelist type="QVariantList" key="ClangTools.SelectedFiles"/>
     <valuelist type="QVariantList" key="ClangTools.SuppressedDiagnostics"/>
@@ -116,32 +116,18 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">/home/anon/dev/mso-750/app/main.py</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./home/anon/dev/mso-750/app/main.py</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/home/anon/dev/mso-750/app/main.py</value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{272d26f3-e120-4f11-9295-338dbdc8695b}</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">/home/anon/qt-app/mso-750/app/main.py</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./home/anon/qt-app/mso-750/app/main.py</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/home/anon/qt-app/mso-750/app/main.py</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{855b99c6-0518-4f01-85ac-16c5a4cc939b}</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">/home/anon/qt-app/mso-750/app/main.py</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/anon/qt-app/mso-750/app</value>
    </valuemap>
-   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.1">
-    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
-    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
-    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
-    <valuelist type="QVariantList" key="CustomOutputParsers"/>
-    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
-    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">/home/anon/dev/mso-750/app/libs/example.py</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./home/anon/dev/mso-750/app/libs/example.py</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/home/anon/dev/mso-750/app/libs/example.py</value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{272d26f3-e120-4f11-9295-338dbdc8695b}</value>
-    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
-    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
-    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
-    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-   </valuemap>
-   <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">2</value>
+   <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
   </valuemap>
  </data>
  <data>

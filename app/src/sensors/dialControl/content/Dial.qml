@@ -108,8 +108,8 @@ Item {
 
             Behavior on angle {
                 SpringAnimation {
-                    spring: 0.94
-                    damping: 0.25
+                    spring: 0.94 ///0.94
+                    damping: 0.05 ///0.25
                 }
             }
         }

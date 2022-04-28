@@ -5,8 +5,11 @@ from pathlib import Path
 from PySide2.QtWidgets import QApplication
 from PySide2.QtQml import QQmlApplicationEngine
 
-from libs.example import *
+from backend.core import parse_data
+
+from backend.example import Example
 os.environ["QT_IM_MODULE"] = "qtvirtualkeyboard"
+
 
 
 if __name__ == "__main__":
@@ -16,5 +19,7 @@ if __name__ == "__main__":
 
     example = Example()
     engine.rootContext().setContextProperty("example", example)
+
+    # parse_data()
 
     sys.exit(app.exec_())
