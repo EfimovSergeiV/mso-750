@@ -20,6 +20,7 @@ class Example(QObject):
 
 
     def SensorOne(self):
+        """ Пример сигнала """
         port = serial.Serial('/dev/ttyUSB0', baudrate=38400)
         data = port.read(13).hex()
         bytes = [data[i:i+2] for i in range(0, len(data), 2)]
