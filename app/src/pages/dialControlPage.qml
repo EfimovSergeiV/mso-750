@@ -5,10 +5,10 @@ import "../sensors/dialControl"
 Item {
     DialControl {
         id: circGauge
-        width: 200
+        width: 206
         height: 192
         anchors.verticalCenterOffset: -83
-        anchors.horizontalCenterOffset: -173
+        anchors.horizontalCenterOffset: -209
         x: 0
         y: 0
         value: 0

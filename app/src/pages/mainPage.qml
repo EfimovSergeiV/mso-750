@@ -1,6 +1,6 @@
 import QtQuick 2.0
 import QtQuick.Controls 2.15
-import QtQuick.Dialogs 1.2
+import QtQuick.Dialogs 1.0
 import "../controls"
 
 Item {
@@ -146,7 +146,6 @@ Item {
             font.family: "Proxima Nova"
         }
 
-
         BlueBtn {
             id: btnHome5
             x: 318
@@ -239,6 +238,7 @@ Item {
 
 /*##^##
 Designer {
-    D{i:0;autoSize:true;height:480;width:800}D{i:3}D{i:6}D{i:9}D{i:10}D{i:11}D{i:12}
+    D{i:0;autoSize:true;height:480;width:800}
 }
 ##^##*/
+

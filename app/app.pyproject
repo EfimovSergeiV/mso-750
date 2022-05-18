@@ -1,3 +1,3 @@
 {
-    "files": ["src/sensors/dialControl/DialControl.qml","src/sensors/dialControl/content/Dial.qml","src/controls/BlueBtn.qml","main.py","src/pages/correctorParamPage.qml","src/pages/mainPage.qml","src/main.qml","src/pages/chartPage.qml","src/pages/dialControlPage.qml","libs/example.py"]
+    "files": ["src/controls/BlueBtn.qml","src/pages/dialControlPage.qml","src/sensors/dialControl/DialControl.qml","src/pages/mainPage.qml","src/sensors/buttonIndicator/ButtonIndicator.qml","src/pages/ClickableImageV2.qml","src/pages/visualPage.qml","src/sensors/lightIndicator/lightIndicator.qml","src/sensors/clampControl/ClampControl.qml","src/pages/firstSetupPage.qml","src/sensors/dialControl/content/Dial.qml","src/pages/correctorParamPage.qml","src/controls/intDialog/content/BlueBtn.qml","src/pages/chartPage.qml","main.py","src/controls/intDialog/IntDialog.qml","src/main.qml","libs/example.py"]
 }

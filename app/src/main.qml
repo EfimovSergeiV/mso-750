@@ -8,25 +8,30 @@ import "./fonts"
 Window {
     width: 800
     height: 480
+
     minimumWidth: 800
     minimumHeight: 480
+
+    maximumWidth: 800
+    maximumHeight: 480
+
     visible: true
     title: qsTr("МСО 750")
 
     Rectangle {
         id: rectangle
-        color: "#2c313c"
+        color: "#aebfcd"
         anchors.fill: parent
 
         StackView {
             id: stackView
             anchors.fill: parent
-            initialItem: Qt.resolvedUrl("pages/mainPage.qml")
+            initialItem: Qt.resolvedUrl("pages/correctorParamPage.qml")
             pushEnter: Transition {
                 PropertyAnimation {
                     property: "opacity"
                     from: 0
-                    to:1
+                    to: 1
                     duration: 100
                 }
             }
@@ -34,7 +39,7 @@ Window {
                 PropertyAnimation {
                     property: "opacity"
                     from: 1
-                    to:0
+                    to: 0
                     duration: 100
                 }
             }
@@ -42,7 +47,7 @@ Window {
                 PropertyAnimation {
                     property: "opacity"
                     from: 0
-                    to:1
+                    to: 1
                     duration: 100
                 }
             }
@@ -50,13 +55,12 @@ Window {
                 PropertyAnimation {
                     property: "opacity"
                     from: 1
-                    to:0
+                    to: 0
                     duration: 100
                 }
             }
         }
     }
 
-//    flags: Qt.Window | Qt.FramelessWindowHint
-
+    //    flags: Qt.Window | Qt.FramelessWindowHint
 }
