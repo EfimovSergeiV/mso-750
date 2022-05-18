@@ -22,7 +22,6 @@ Button {
         border.color: "#004F90"
         border.width: 1
         radius: 1
-        layer.enabled: control.enabled && control.MyStyle.elevation > 0
+        //        layer.enabled: control.enabled && control.MyStyle.elevation > 0
     }
 }
-

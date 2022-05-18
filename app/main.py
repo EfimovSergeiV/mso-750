@@ -8,7 +8,7 @@ from PySide2.QtQml import QQmlApplicationEngine
 from backend.core import parse_data
 
 from backend.example import Example
-os.environ["QT_IM_MODULE"] = "qtvirtualkeyboard"
+#os.environ["QT_IM_MODULE"] = "qtvirtualkeyboard"
 
 
 import serial

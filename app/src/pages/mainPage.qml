@@ -67,7 +67,7 @@ Item {
             anchors.leftMargin: 0
             font.capitalization: Font.AllUppercase
             onClicked: {
-                stackView.push(Qt.resolvedUrl("chartPage.qml"))
+                stackView.push(Qt.resolvedUrl("visualPage.qml"))
             }
         }
 

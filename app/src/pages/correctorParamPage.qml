@@ -2,6 +2,7 @@ import QtQuick 2.0
 import QtQuick.Controls 2.15
 import QtQuick.VirtualKeyboard 2.1
 import "../controls"
+import "../controls/intDialog"
 
 Item {
     Rectangle {
@@ -12,6 +13,11 @@ Item {
         anchors.bottomMargin: 0
         anchors.leftMargin: 0
         anchors.topMargin: 0
+
+        IntDialog {
+            id: integerDialog
+            anchors.centerIn: parent
+        }
 
         Rectangle {
             id: rectangle1
@@ -226,9 +232,15 @@ Item {
                     id: textField
                     width: 75
                     height: 28
+                    text: "hallo"
                     horizontalAlignment: Text.AlignHCenter
                     font.family: "Proxima Nova"
                     placeholderText: qsTr("0")
+                    onActiveFocusChanged: {
+                        console.log("textField")
+                        integerDialog.open()
+                    }
+                    onEditingFinished: console.log("textField")
                 }
 
                 TextField {
@@ -238,6 +250,11 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     font.family: "Proxima Nova"
                     placeholderText: qsTr("0")
+                    onActiveFocusChanged: {
+                        console.log("textField1")
+                        integerDialog.open()
+                    }
+                    onEditingFinished: console.log("textField1")
                 }
 
                 TextField {
@@ -247,6 +264,11 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     font.family: "Proxima Nova"
                     placeholderText: qsTr("0")
+                    onActiveFocusChanged: {
+                        console.log("textField2")
+                        integerDialog.open()
+                    }
+                    onEditingFinished: console.log("textField2")
                 }
 
                 TextField {
@@ -697,20 +719,6 @@ Item {
             }
         }
     }
-
-    //    InputPanel {
-    //        id: keyboardPanel
-    //        visible: true
-    //        anchors.horizontalCenter: parent.horizontalCenter
-    //        anchors.bottom: parent.bottom
-    //        width: 700
-    //        Component.onCompleted: {
-    //            keyboard.style.keyboardBackground = null;        // the keyboard background
-    //            keyboard.style.selectionListBackground = null;   // the horizontal bar at the
-    //        }
-    //        //        Component.onCompleted: console.log(Object.keys(keyboardPanel.keyboard.style).sort())
-    //        //        qml: [alternateKeysListBackground,alternateKeysListBackgroundChanged,alternateKeysListBottomMargin,alternateKeysListBottomMarginChanged,alternateKeysListDelegate,alternateKeysListDelegateChanged,alternateKeysListHighlight,alternateKeysListHighlightChanged,alternateKeysListItemHeight,alternateKeysListItemHeightChanged,alternateKeysListItemWidth,alternateKeysListItemWidthChanged,alternateKeysListLeftMargin,alternateKeysListLeftMarginChanged,alternateKeysListRightMargin,alternateKeysListRightMarginChanged,alternateKeysListTopMargin,alternateKeysListTopMarginChanged,backspaceKeyPanel,backspaceKeyPanelChanged,characterPreviewDelegate,characterPreviewDelegateChanged,characterPreviewMargin,characterPreviewMarginChanged,compactSelectionList,compactSelectionListChanged,enterKeyPanel,enterKeyPanelChanged,fontFamily,fontFamilyChanged,fullScreenInputBackground,fullScreenInputBackgroundChanged,fullScreenInputColor,fullScreenInputColorChanged,fullScreenInputContainerBackground,fullScreenInputContainerBackgroundChanged,fullScreenInputCursor,fullScreenInputCursorChanged,fullScreenInputFont,fullScreenInputFontChanged,fullScreenInputMargins,fullScreenInputMarginsChanged,fullScreenInputPadding,fullScreenInputPaddingChanged,fullScreenInputPasswordCharacter,fullScreenInputPasswordCharacterChanged,fullScreenInputSelectedTextColor,fullScreenInputSelectedTextColorChanged,fullScreenInputSelectionColor,fullScreenInputSelectionColorChanged,handwritingKeyPanel,handwritingKeyPanelChanged,hideKeyPanel,hideKeyPanelChanged,inputLocale,inputLocaleChanged,inputLocaleIndicatorColor,inputLocaleIndicatorColorChanged,inputLocaleIndicatorHighlightTimer,inputLocaleIndicatorHighlightTimerChanged,keyBackgroundMargin,keyBackgroundMarginChanged,keyContentMargin,keyContentMarginChanged,keyIconScale,keyIconScaleChanged,keyPanel,keyPanelChanged,keyboardBackground,keyboardBackgroundChanged,keyboardDesignHeight,keyboardDesignHeightChanged,keyboardDesignWidth,keyboardDesignWidthChanged,keyboardHeight,keyboardHeightChanged,keyboardRelativeBottomMargin,keyboardRelativeBottomMarginChanged,keyboardRelativeLeftMargin,keyboardRelativeLeftMarginChanged,keyboardRelativeRightMargin,keyboardRelativeRightMarginChanged,keyboardRelativeTopMargin,keyboardRelativeTopMarginChanged,languageKeyPanel,languageKeyPanelChanged,languageListAdd,languageListAddChanged,languageListBackground,languageListBackgroundChanged,languageListDelegate,languageListDelegateChanged,languageListHighlight,languageListHighlightChanged,languageListRemove,languageListRemoveChanged,languagePopupListEnabled,languagePopupListEnabledChanged,modeKeyPanel,modeKeyPanelChanged,navigationHighlight,navigationHighlightChanged,objectName,objectNameChanged,popupListAdd,popupListAddChanged,popupListBackground,popupListBackgroundChanged,popupListDelegate,popupListDelegateChanged,popupListHighlight,popupListHighlightChanged,popupListRemove,popupListRemoveChanged,resourcePrefix,resourcePrefixChanged,scaleHint,scaleHintChanged,selectionHandle,selectionHandleChanged,selectionListAdd,selectionListAddChanged,selectionListBackground,selectionListBackgroundChanged,selectionListDelegate,selectionListDelegateChanged,selectionListHeight,selectionListHeightChanged,selectionListHighlight,selectionListHighlightChanged,selectionListRemove,selectionListRemoveChanged,shiftKeyPanel,shiftKeyPanelChanged,spaceKeyPanel,spaceKeyPanelChanged,symbolKeyPanel,symbolKeyPanelChanged,traceCanvasDelegate,traceCanvasDelegateChanged,traceInputKeyPanelDelegate,traceInputKeyPanelDelegateChanged]
-    //    }
 }
 
 /*##^##
