@@ -1,6 +1,6 @@
 import QtQuick 2.0
 import QtQuick.Controls 2.15
-import QtQuick.VirtualKeyboard 2.1
+import QtQuick.VirtualKeyboard 2.15
 import "../controls"
 import "../controls/intDialog"
 
@@ -232,29 +232,42 @@ Item {
                     id: textField
                     width: 75
                     height: 28
-                    text: "hallo"
                     horizontalAlignment: Text.AlignHCenter
                     font.family: "Proxima Nova"
                     placeholderText: qsTr("0")
+                    inputMethodHints: Qt.ImhDigitsOnly
+                    //                    onActiveFocusChanged: keyboardPanel.active = true
+                    //                    enterKeyAction: EnterKeyAction.Next
+                    //                    onAccepted: textArea.focus = true
                     onActiveFocusChanged: {
                         console.log("textField")
                         integerDialog.open()
                     }
-                    onEditingFinished: console.log("textField")
+                    onEditingFinished: {
+                        console.log("textField")
+                        integerDialog.close()
+                    }
                 }
 
                 TextField {
                     id: textField1
                     width: 75
                     height: 28
+                    text: "hallo"
                     horizontalAlignment: Text.AlignHCenter
                     font.family: "Proxima Nova"
                     placeholderText: qsTr("0")
+                    inputMethodHints: Qt.ImhDigitsOnly
+                    //                    enterKeyAction: EnterKeyAction.Next
+                    onAccepted: textArea.focus = true
                     onActiveFocusChanged: {
-                        console.log("textField1")
+                        console.log("textField")
                         integerDialog.open()
                     }
-                    onEditingFinished: console.log("textField1")
+                    onEditingFinished: {
+                        console.log("textField")
+                        integerDialog.close()
+                    }
                 }
 
                 TextField {
@@ -264,11 +277,17 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     font.family: "Proxima Nova"
                     placeholderText: qsTr("0")
+                    inputMethodHints: Qt.ImhDigitsOnly
+                    //                    enterKeyAction: EnterKeyAction.Next
+                    onAccepted: textArea.focus = true
                     onActiveFocusChanged: {
-                        console.log("textField2")
+                        console.log("textField")
                         integerDialog.open()
                     }
-                    onEditingFinished: console.log("textField2")
+                    onEditingFinished: {
+                        console.log("textField")
+                        integerDialog.close()
+                    }
                 }
 
                 TextField {
@@ -360,6 +379,7 @@ Item {
                 anchors.top: label13.bottom
                 anchors.rightMargin: 8
                 spacing: 4
+
                 TextField {
                     id: textField10
                     width: 75
@@ -704,27 +724,41 @@ Item {
 
             BlueBtn {
                 id: blueBtn
-                x: 632
-                y: 4
+                x: 468
+                y: 172
                 width: 164
                 height: 36
                 text: "Выход"
                 anchors.right: parent.right
                 font.bold: true
                 font.family: "Proxima Nova"
-                anchors.rightMargin: 4
+                anchors.rightMargin: 8
                 onClicked: {
                     stackView.push(Qt.resolvedUrl("mainPage.qml"))
                 }
             }
         }
     }
+    //    InputPanel {
+    //        id: keyboardPanel
+    //        visible: false
+    //        anchors.centerIn: parent
+    //        //        anchors.horizontalCenter: parent.horizontalCenter
+    //        //        anchors.bottom: parent.bottom
+    //        width: 1200
+    //        Component.onCompleted: {
+
+    //            keyboard.style.keyboardBackground = null // the keyboard background
+    //            keyboard.style.selectionListBackground = null // the horizontal bar at the
+    //        }
+    //        //        Component.onCompleted: console.log(Object.keys(keyboardPanel.keyboard.style).sort())
+    //        //        qml: [alternateKeysListBackground,alternateKeysListBackgroundChanged,alternateKeysListBottomMargin,alternateKeysListBottomMarginChanged,alternateKeysListDelegate,alternateKeysListDelegateChanged,alternateKeysListHighlight,alternateKeysListHighlightChanged,alternateKeysListItemHeight,alternateKeysListItemHeightChanged,alternateKeysListItemWidth,alternateKeysListItemWidthChanged,alternateKeysListLeftMargin,alternateKeysListLeftMarginChanged,alternateKeysListRightMargin,alternateKeysListRightMarginChanged,alternateKeysListTopMargin,alternateKeysListTopMarginChanged,backspaceKeyPanel,backspaceKeyPanelChanged,characterPreviewDelegate,characterPreviewDelegateChanged,characterPreviewMargin,characterPreviewMarginChanged,compactSelectionList,compactSelectionListChanged,enterKeyPanel,enterKeyPanelChanged,fontFamily,fontFamilyChanged,fullScreenInputBackground,fullScreenInputBackgroundChanged,fullScreenInputColor,fullScreenInputColorChanged,fullScreenInputContainerBackground,fullScreenInputContainerBackgroundChanged,fullScreenInputCursor,fullScreenInputCursorChanged,fullScreenInputFont,fullScreenInputFontChanged,fullScreenInputMargins,fullScreenInputMarginsChanged,fullScreenInputPadding,fullScreenInputPaddingChanged,fullScreenInputPasswordCharacter,fullScreenInputPasswordCharacterChanged,fullScreenInputSelectedTextColor,fullScreenInputSelectedTextColorChanged,fullScreenInputSelectionColor,fullScreenInputSelectionColorChanged,handwritingKeyPanel,handwritingKeyPanelChanged,hideKeyPanel,hideKeyPanelChanged,inputLocale,inputLocaleChanged,inputLocaleIndicatorColor,inputLocaleIndicatorColorChanged,inputLocaleIndicatorHighlightTimer,inputLocaleIndicatorHighlightTimerChanged,keyBackgroundMargin,keyBackgroundMarginChanged,keyContentMargin,keyContentMarginChanged,keyIconScale,keyIconScaleChanged,keyPanel,keyPanelChanged,keyboardBackground,keyboardBackgroundChanged,keyboardDesignHeight,keyboardDesignHeightChanged,keyboardDesignWidth,keyboardDesignWidthChanged,keyboardHeight,keyboardHeightChanged,keyboardRelativeBottomMargin,keyboardRelativeBottomMarginChanged,keyboardRelativeLeftMargin,keyboardRelativeLeftMarginChanged,keyboardRelativeRightMargin,keyboardRelativeRightMarginChanged,keyboardRelativeTopMargin,keyboardRelativeTopMarginChanged,languageKeyPanel,languageKeyPanelChanged,languageListAdd,languageListAddChanged,languageListBackground,languageListBackgroundChanged,languageListDelegate,languageListDelegateChanged,languageListHighlight,languageListHighlightChanged,languageListRemove,languageListRemoveChanged,languagePopupListEnabled,languagePopupListEnabledChanged,modeKeyPanel,modeKeyPanelChanged,navigationHighlight,navigationHighlightChanged,objectName,objectNameChanged,popupListAdd,popupListAddChanged,popupListBackground,popupListBackgroundChanged,popupListDelegate,popupListDelegateChanged,popupListHighlight,popupListHighlightChanged,popupListRemove,popupListRemoveChanged,resourcePrefix,resourcePrefixChanged,scaleHint,scaleHintChanged,selectionHandle,selectionHandleChanged,selectionListAdd,selectionListAddChanged,selectionListBackground,selectionListBackgroundChanged,selectionListDelegate,selectionListDelegateChanged,selectionListHeight,selectionListHeightChanged,selectionListHighlight,selectionListHighlightChanged,selectionListRemove,selectionListRemoveChanged,shiftKeyPanel,shiftKeyPanelChanged,spaceKeyPanel,spaceKeyPanelChanged,symbolKeyPanel,symbolKeyPanelChanged,traceCanvasDelegate,traceCanvasDelegateChanged,traceInputKeyPanelDelegate,traceInputKeyPanelDelegateChanged]
+    //    }
 }
 
 /*##^##
 Designer {
-    D{i:0;autoSize:true;formeditorZoom:0.9;height:480;width:800}D{i:3}D{i:4}D{i:6}D{i:18}
-D{i:30}D{i:42}D{i:54}D{i:65}
+    D{i:0;autoSize:true;formeditorZoom:0.9;height:480;width:800}
 }
 ##^##*/
 
