@@ -1,10 +1,18 @@
 import QtQuick 2.0
 import QtQuick.Controls 2.15
-import QtQuick.VirtualKeyboard 2.15
+
+//import QtQuick.VirtualKeyboard 2.15
+//import QtQuick.VirtualKeyboard.Styles 2.15
+//import QtQuick.VirtualKeyboard.Settings 2.15
+import "./content"
 import "../controls"
 import "../controls/intDialog"
 
 Item {
+    id: root
+    signal send
+    onSend: console.log("Send clicked")
+
     Rectangle {
         id: rectangle
         color: "#ffffff"
@@ -14,11 +22,10 @@ Item {
         anchors.leftMargin: 0
         anchors.topMargin: 0
 
-        IntDialog {
-            id: integerDialog
-            anchors.centerIn: parent
-        }
-
+        //        IntDialog {
+        //            id: integerDialog
+        //            anchors.centerIn: parent
+        //        }
         Rectangle {
             id: rectangle1
             height: 28
@@ -239,35 +246,34 @@ Item {
                     //                    onActiveFocusChanged: keyboardPanel.active = true
                     //                    enterKeyAction: EnterKeyAction.Next
                     //                    onAccepted: textArea.focus = true
-                    onActiveFocusChanged: {
-                        console.log("textField")
-                        integerDialog.open()
-                    }
-                    onEditingFinished: {
-                        console.log("textField")
-                        integerDialog.close()
-                    }
+                    //                    onActiveFocusChanged: {
+                    //                        console.log("textField")
+                    //                        integerDialog.open()
+                    //                    }
+                    //                    onEditingFinished: {
+                    //                        console.log("textField")
+                    //                        integerDialog.close()
+                    //                    }
                 }
 
                 TextField {
                     id: textField1
                     width: 75
                     height: 28
-                    text: "hallo"
                     horizontalAlignment: Text.AlignHCenter
                     font.family: "Proxima Nova"
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
                     //                    enterKeyAction: EnterKeyAction.Next
                     onAccepted: textArea.focus = true
-                    onActiveFocusChanged: {
-                        console.log("textField")
-                        integerDialog.open()
-                    }
-                    onEditingFinished: {
-                        console.log("textField")
-                        integerDialog.close()
-                    }
+                    //                    onActiveFocusChanged: {
+                    //                        console.log("textField")
+                    //                        integerDialog.open()
+                    //                    }
+                    //                    onEditingFinished: {
+                    //                        console.log("textField")
+                    //                        integerDialog.close()
+                    //                    }
                 }
 
                 TextField {
@@ -280,14 +286,14 @@ Item {
                     inputMethodHints: Qt.ImhDigitsOnly
                     //                    enterKeyAction: EnterKeyAction.Next
                     onAccepted: textArea.focus = true
-                    onActiveFocusChanged: {
-                        console.log("textField")
-                        integerDialog.open()
-                    }
-                    onEditingFinished: {
-                        console.log("textField")
-                        integerDialog.close()
-                    }
+                    //                    onActiveFocusChanged: {
+                    //                        console.log("textField")
+                    //                        integerDialog.open()
+                    //                    }
+                    //                    onEditingFinished: {
+                    //                        console.log("textField")
+                    //                        integerDialog.close()
+                    //                    }
                 }
 
                 TextField {
@@ -616,6 +622,7 @@ Item {
                 anchors.top: label15.bottom
                 anchors.rightMargin: 8
                 spacing: 4
+
                 TextField {
                     id: textField30
                     width: 75
@@ -737,23 +744,54 @@ Item {
                     stackView.push(Qt.resolvedUrl("mainPage.qml"))
                 }
             }
+
+            Image {
+                id: image1
+                x: 99
+                y: 47
+                width: 80
+                height: 40
+                source: "./content/btn.png"
+                fillMode: Image.PreserveAspectFit
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: console.log("1")
+                }
+            }
+
+            Image {
+                id: image2
+                x: 185
+                y: 47
+                width: 80
+                height: 40
+                source: "./content/btn.png"
+                fillMode: Image.PreserveAspectFit
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: console.log("2")
+                }
+            }
+
+            Image {
+                id: image3
+                x: 13
+                y: 47
+                width: 80
+                height: 40
+                source: "./content/btn.png"
+                fillMode: Image.PreserveAspectFit
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        print(activeFocusItem, pressed)
+                        send("a")
+                        root.clicked('text')
+                    }
+                }
+            }
         }
     }
-    //    InputPanel {
-    //        id: keyboardPanel
-    //        visible: false
-    //        anchors.centerIn: parent
-    //        //        anchors.horizontalCenter: parent.horizontalCenter
-    //        //        anchors.bottom: parent.bottom
-    //        width: 1200
-    //        Component.onCompleted: {
-
-    //            keyboard.style.keyboardBackground = null // the keyboard background
-    //            keyboard.style.selectionListBackground = null // the horizontal bar at the
-    //        }
-    //        //        Component.onCompleted: console.log(Object.keys(keyboardPanel.keyboard.style).sort())
-    //        //        qml: [alternateKeysListBackground,alternateKeysListBackgroundChanged,alternateKeysListBottomMargin,alternateKeysListBottomMarginChanged,alternateKeysListDelegate,alternateKeysListDelegateChanged,alternateKeysListHighlight,alternateKeysListHighlightChanged,alternateKeysListItemHeight,alternateKeysListItemHeightChanged,alternateKeysListItemWidth,alternateKeysListItemWidthChanged,alternateKeysListLeftMargin,alternateKeysListLeftMarginChanged,alternateKeysListRightMargin,alternateKeysListRightMarginChanged,alternateKeysListTopMargin,alternateKeysListTopMarginChanged,backspaceKeyPanel,backspaceKeyPanelChanged,characterPreviewDelegate,characterPreviewDelegateChanged,characterPreviewMargin,characterPreviewMarginChanged,compactSelectionList,compactSelectionListChanged,enterKeyPanel,enterKeyPanelChanged,fontFamily,fontFamilyChanged,fullScreenInputBackground,fullScreenInputBackgroundChanged,fullScreenInputColor,fullScreenInputColorChanged,fullScreenInputContainerBackground,fullScreenInputContainerBackgroundChanged,fullScreenInputCursor,fullScreenInputCursorChanged,fullScreenInputFont,fullScreenInputFontChanged,fullScreenInputMargins,fullScreenInputMarginsChanged,fullScreenInputPadding,fullScreenInputPaddingChanged,fullScreenInputPasswordCharacter,fullScreenInputPasswordCharacterChanged,fullScreenInputSelectedTextColor,fullScreenInputSelectedTextColorChanged,fullScreenInputSelectionColor,fullScreenInputSelectionColorChanged,handwritingKeyPanel,handwritingKeyPanelChanged,hideKeyPanel,hideKeyPanelChanged,inputLocale,inputLocaleChanged,inputLocaleIndicatorColor,inputLocaleIndicatorColorChanged,inputLocaleIndicatorHighlightTimer,inputLocaleIndicatorHighlightTimerChanged,keyBackgroundMargin,keyBackgroundMarginChanged,keyContentMargin,keyContentMarginChanged,keyIconScale,keyIconScaleChanged,keyPanel,keyPanelChanged,keyboardBackground,keyboardBackgroundChanged,keyboardDesignHeight,keyboardDesignHeightChanged,keyboardDesignWidth,keyboardDesignWidthChanged,keyboardHeight,keyboardHeightChanged,keyboardRelativeBottomMargin,keyboardRelativeBottomMarginChanged,keyboardRelativeLeftMargin,keyboardRelativeLeftMarginChanged,keyboardRelativeRightMargin,keyboardRelativeRightMarginChanged,keyboardRelativeTopMargin,keyboardRelativeTopMarginChanged,languageKeyPanel,languageKeyPanelChanged,languageListAdd,languageListAddChanged,languageListBackground,languageListBackgroundChanged,languageListDelegate,languageListDelegateChanged,languageListHighlight,languageListHighlightChanged,languageListRemove,languageListRemoveChanged,languagePopupListEnabled,languagePopupListEnabledChanged,modeKeyPanel,modeKeyPanelChanged,navigationHighlight,navigationHighlightChanged,objectName,objectNameChanged,popupListAdd,popupListAddChanged,popupListBackground,popupListBackgroundChanged,popupListDelegate,popupListDelegateChanged,popupListHighlight,popupListHighlightChanged,popupListRemove,popupListRemoveChanged,resourcePrefix,resourcePrefixChanged,scaleHint,scaleHintChanged,selectionHandle,selectionHandleChanged,selectionListAdd,selectionListAddChanged,selectionListBackground,selectionListBackgroundChanged,selectionListDelegate,selectionListDelegateChanged,selectionListHeight,selectionListHeightChanged,selectionListHighlight,selectionListHighlightChanged,selectionListRemove,selectionListRemoveChanged,shiftKeyPanel,shiftKeyPanelChanged,spaceKeyPanel,spaceKeyPanelChanged,symbolKeyPanel,symbolKeyPanelChanged,traceCanvasDelegate,traceCanvasDelegateChanged,traceInputKeyPanelDelegate,traceInputKeyPanelDelegateChanged]
-    //    }
 }
 
 /*##^##
